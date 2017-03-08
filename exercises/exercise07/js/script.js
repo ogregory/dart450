@@ -23,72 +23,95 @@ $(document).ready(function() {
   // Create a new scene based on the trigger div
   // Use a duration so that the animations are tied to scroll speed
   var scene = new ScrollMagic.Scene({
-    triggerElement: "#animation",
-    duration: 200
+    triggerElement: "#trigger",
+    duration: 500,
   });
 
   // Now we can set our tween to animate any CSS properties we want
   // to change while the user scrolls through our trigger.
   // Note that in setTween '#trigger' refers to the element we want
   // to be AFFECTED by the animation - it could be a different element
-  scene.setTween("#trigger", 0.5, {
-    "backgroundImage": "url('img2.')",
+  scene.setTween("#face", 0.5, {
+    "width": "1200px",
+    "height": "400px",
     // border: "100px solid",
     // transform: "rotateY(180deg)",
     // opacity: "0.25",
     // "-webkit-text-stroke": "20px"
   });
 
-  scene.triggerHook(0.5);
+  scene.triggerHook(0);
 
   // Add the debugging indicators so we can see what's happening
-   scene.addIndicators();
+  // scene.addIndicators();
 
   // Add our scene to the controller so it actually does something
   scene.addTo(controller);
 
 
-  // NOTES:
+  var scene2 = new ScrollMagic.Scene({
+    triggerElement: "#trigger2",
+    duration: 500,
+  });
 
-  ////////// Controlling a different element with the trigger:
+  scene2.setTween("#face", 0.5, {
+    "width": "800px",
+    "height": "800px",
+    // border: "100px solid",
+    // transform: "rotateY(180deg)",
+    // opacity: "0.25",
+    // "-webkit-text-stroke": "20px"
+  });
 
-  // We could also set a tween controlled by scrolling through our
-  // #trigger div that actually tweens a DIFFERENT element on the page,
-  // like our #fixedblock div.
-  //
-  // scene.setTween("#fixedblock", 0.5, {
-  //   rotation: 360,
-  //   backgroundColor: "aqua"
-  // });
+  scene2.triggerHook(0);
 
-  ////////// Multiple tweens
+  // Add the debugging indicators so we can see what's happening
+  // scene2.addIndicators();
 
-  // You can only have ONE setTween per scene, though.
-  // If you really want to have multiple tweens, you can use a thing called
-  // a TimelineMax from TweenMax, but that's getting fairly complex.
-  // https://greensock.com/timelinemax
+  // Add our scene to the controller so it actually does something
+  scene2.addTo(controller);
 
-  ////////// Coding style
+  var scene3 = new ScrollMagic.Scene({
+    triggerElement: "#trigger3",
+    duration: 500,
+  });
 
-  // You may have notice in the example code they write setting up a scene
-  // like this:
-  //
-  // var scene = new ScrollMagic.Scene({
-  //   triggerElement: "#trigger",
-  //   duration: 200
-  // })
-  // .setTween("#trigger", 0.5, {
-  //   "backgroundColor": "green",
-  // })
-  // .addIndicators()
-  // .addTo(controller);
-  //
-  // This is often called "chaining" and it works because each of the
-  // functions here (new ScrollMagic.Scene(), setTween(), addIndicators(),
-  // and addTo()) all return the scene they create/worked on.
-  //
-  // Overall, though, it this seems confusing, it's just as fine to do it
-  // the way above, with the scene variable explicitly used for each step
-  // in the process.
+  scene3.setTween("#face", 0.5, {
+    "width": "400px",
+    "height": "1200px",
+    // border: "100px solid",
+    // transform: "rotateY(180deg)",
+    // opacity: "0.25",
+    // "-webkit-text-stroke": "20px"
+  });
 
+  scene3.triggerHook(0);
+
+  // Add the debugging indicators so we can see what's happening
+  // scene3.addIndicators();
+
+  // Add our scene to the controller so it actually does something
+  scene3.addTo(controller);
+
+  var scene4 = new ScrollMagic.Scene({
+    triggerElement: "#trigger4",
+    duration: 500,
+  });
+
+  scene4.setTween("#face", 0.5, {
+    "width": "800px",
+    "height": "800px",
+    // border: "100px solid",
+    // transform: "rotateY(180deg)",
+    // opacity: "0.25",
+    // "-webkit-text-stroke": "20px"
+  });
+
+  scene4.triggerHook(0);
+
+  // Add the debugging indicators so we can see what's happening
+  // scene4.addIndicators();
+
+  // Add our scene to the controller so it actually does something
+  scene4.addTo(controller);
 });

@@ -20,20 +20,29 @@ html body {
   top: 50%;
   left:50%;
   transform: translate(-50%,-50%);
-  border: red 1px solid;
 }
 
-
-#trigger {
+.image {
+  transform: translate(-50%,-50%);
   position: fixed;
   width: 800px;
   height:800px;
   top: 50%;
   left:50%;
-  transform: translate(-50%,-50%);
-  border: blue 1px solid;
-  background-image: url('../images/1.jpg');
-  background-size: contain;
+}
+
+#face {
+
+  background-image: url('../images/face.jpg');
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+
+.animation {
+  position: relative;
+  height: 500px;
+  width:100%;
+
 }
