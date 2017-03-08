@@ -24,7 +24,7 @@ $(document).ready(function() {
   // Use a duration so that the animations are tied to scroll speed
   var scene = new ScrollMagic.Scene({
     triggerElement: "#trigger",
-    duration: 500,
+    duration: 400,
   });
 
   // Now we can set our tween to animate any CSS properties we want
@@ -51,7 +51,7 @@ $(document).ready(function() {
 
   var scene2 = new ScrollMagic.Scene({
     triggerElement: "#trigger2",
-    duration: 500,
+    duration: 400,
   });
 
   scene2.setTween("#face", 0.5, {
@@ -73,7 +73,7 @@ $(document).ready(function() {
 
   var scene3 = new ScrollMagic.Scene({
     triggerElement: "#trigger3",
-    duration: 500,
+    duration: 400,
   });
 
   scene3.setTween("#face", 0.5, {
@@ -95,7 +95,7 @@ $(document).ready(function() {
 
   var scene4 = new ScrollMagic.Scene({
     triggerElement: "#trigger4",
-    duration: 500,
+    duration: 400,
   });
 
   scene4.setTween("#face", 0.5, {
