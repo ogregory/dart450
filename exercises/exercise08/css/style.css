@@ -1,0 +1,47 @@
+/*
+
+Scroll Blasting
+Pippin Barr
+
+Some basic styling
+
+*/
+html, body {
+  height:100%;
+  width:100%;
+}
+
+
+
+h1 {
+
+}
+
+
+#trigger {
+  height:200%;
+}
+
+#footer {
+  height:100%;
+}
+
+
+#title {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 1px;
+  text-align: center;
+}
+
+#content {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+a, a:hover, a:visited {
+  color: #000;
+  text-decoration: underline;
+}
