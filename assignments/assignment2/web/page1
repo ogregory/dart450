@@ -2,15 +2,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title> </title>
+<title> Cave Page </title>
 <link rel="stylesheet" type="text/css" href="css/boilerplate.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 
 <body>
-<a href="web/cave.html">CAVE</a>
-<a href="web/catch.html">CATCH</a>
-
+<div id="cave">
+<p>I DON'T EXIST YET. <br> <br> COME BACK LATER.</p>
+</div>
 </body>
 </html>
