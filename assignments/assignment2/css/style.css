@@ -183,8 +183,16 @@ border: 1px red solid;
   display: none;
 }
 
-#passwordium {
+#passwordium1 {
   width: 200px;
   height:200px;
   background: lime;
+}
+
+/* ===== PORTRAIT PAGE ===== */
+
+.facepart {
+  width:400px;
+  height:400px;
+  background: blue;
 }
