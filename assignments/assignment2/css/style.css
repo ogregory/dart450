@@ -176,3 +176,15 @@ border: 1px red solid;
   z-index: 5;
   background: red;
 }
+
+/* ===== PASSWORD PAGES ===== */
+
+.correct {
+  display: none;
+}
+
+#passwordium {
+  width: 200px;
+  height:200px;
+  background: lime;
+}
