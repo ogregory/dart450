@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Roboto:400,700');
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -111,12 +111,33 @@ html, body {
   width: 100%;
 }
 
+.narration {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bubble {
+  border: 4px black solid;
+  border-radius: 20px;
+  padding:20px;
+}
+
+p {
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+
+}
+
 /* ===== CAVE PAGE ===== */
 
 #cave{
   height: 800%;
   width:800%;
+  background: #333;
 }
+
+
 
 /* ===== CATCH PAGE ===== */
 #catchmain {
@@ -135,6 +156,7 @@ top:10px;
 width:500px;
 height:300px;
 border: 1px red solid;
+background: red;
 }
 
 /* ===== FALL PAGE ===== */
@@ -180,6 +202,8 @@ border: 1px red solid;
 /* ===== PASSWORD PAGES ===== */
 
 .correct {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 20px;
   display: none;
 }
 
@@ -193,43 +217,41 @@ border: 1px red solid;
 
 .facepart {
   display: inline-block;
+  width:300px;
+  height:300px;
 }
 
 #left{
   background:url(../images/left1.png) center center no-repeat;
   background-size: contain;
-  width:400px;
-  height:400px;
+
 
 }
 
 #right{
   background:url(../images/right1.png) center center no-repeat;
   background-size: contain;
-  width:400px;
-  height:400px;
+
 
 }
 
 #nose{
   background:url(../images/nose1.png) center center no-repeat;
   background-size: contain;
-  width:400px;
-  height:400px;
+
 }
 
 #mouth{
   background:url(../images/mouth1.png) center center no-repeat;
   background-size: contain;
-  width:400px;
-  height:400px;
+
 }
 
 #profile_narration{
-  position: fixed;
+  position: absolute;
   top: 5%;
   right: 5%;
-  width: 15%;
+  width: 25%;
 }
 
 #robo_profile{

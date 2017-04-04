@@ -3,9 +3,37 @@
 //by the viewport very quickly. We also want to randomize the speed and height at which
 //the div will fly by in order to up the difficulty of the challenge.
 
-//When the page loads it also loads our looping function
+//We also have programmed a small gag insulting the user based on how long it takes them to catch the div.
+
+//When the page loads it also loads our gag + looping function
 $(document).ready(function() {
 
+  //This gag involves the narrator counting the # of seconds the user takes.
+
+  //So first we need a counter variable to count up.
+  var counter = 0;
+
+  //We have the page add 1 to the counter variable every second (or 1000 milliseconds)
+  setInterval(function () {
+    ++counter;
+  }, 1000);
+
+  //We then need to feed that number into our html every second
+
+  //So this function updates our html to include the new #
+  function myTimer() {
+
+     document.getElementById("changeText").innerHTML = counter;
+ }
+
+  //And this activates our html updating function every second
+  setInterval(function(){ myTimer() }, 1000);
+
+
+
+
+
+ //Then we move onto the challenge portion of the page.
     function loop() {
         //Since the function will be looping many times, we begin each loop by resetting
         //the divs starting position by messing with its css properties.
@@ -24,6 +52,8 @@ $(document).ready(function() {
         });
     }
 
-    //Finally we activate the function again in order to cause it to loop indefinitely.
+    //We activate the function again in order to cause it to loop indefinitely.
     loop();
+
+
  });
