@@ -192,7 +192,49 @@ border: 1px red solid;
 /* ===== PORTRAIT PAGE ===== */
 
 .facepart {
+  display: inline-block;
+}
+
+#left{
+  background:url(../images/left1.png) center center no-repeat;
+  background-size: contain;
   width:400px;
   height:400px;
-  background: blue;
+
+}
+
+#right{
+  background:url(../images/right1.png) center center no-repeat;
+  background-size: contain;
+  width:400px;
+  height:400px;
+
+}
+
+#nose{
+  background:url(../images/nose1.png) center center no-repeat;
+  background-size: contain;
+  width:400px;
+  height:400px;
+}
+
+#mouth{
+  background:url(../images/mouth1.png) center center no-repeat;
+  background-size: contain;
+  width:400px;
+  height:400px;
+}
+
+#profile_narration{
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  width: 15%;
+}
+
+#robo_profile{
+  background:url(../images/mouth1.png) center center no-repeat;
+    background-size: contain;
+    display:     block;
+    padding-top: 100%;
 }
