@@ -2,16 +2,31 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title> </title>
+<title> Login Page </title>
 <link rel="stylesheet" type="text/css" href="css/boilerplate.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/frontpage.js"></script>
 </head>
 
 <body>
-<a href="web/cave.html">CAVE</a>
-<a href="web/catch.html">CATCH</a>
-<a href="web/fall.html">FALL</a>
+
+<main>
+  <div id="login">
+    <p>Username: <input type="text" name="Username" value=""></p><br>
+    <p>Password: <input type="text" name="Password" value=""></p><br>
+    <button onclick="myFunction()" >Submit</button>
+  </div>
+
+<br> Having trouble logging in? <br> <a href="web/profilepic.html">Recover your password.</a>
+
+</main>
+
+<script>
+function myFunction() {
+    alert("Invalid Password");
+}
+</script>
 
 </body>
 </html>

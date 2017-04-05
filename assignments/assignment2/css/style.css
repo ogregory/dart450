@@ -129,6 +129,8 @@ p {
 
 }
 
+/* ===== FRONT PAGE ===== */
+
 /* ===== CAVE PAGE ===== */
 
 #cave{
@@ -137,6 +139,11 @@ p {
   background: #333;
 }
 
+.cavelink{
+  height:400px;
+  width:200px;
+  background:white;
+}
 
 
 /* ===== CATCH PAGE ===== */
