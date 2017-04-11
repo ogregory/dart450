@@ -41,4 +41,13 @@ $(document).ready(function() {
             $("#proceed1").css("display", "none");
         }
     });
+
+    $("#finaldoor").keyup(function() {
+        if (this.value == "DEUS EX MACHINA") {
+            $("#proceed1").css("display", "block");
+        }
+        else {
+            $("#proceed1").css("display", "none");
+        }
+    });
 });

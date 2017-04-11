@@ -119,6 +119,7 @@ html, body {
   border: 4px black solid;
   border-radius: 20px;
   padding:20px;
+  background: white;
 }
 
 p {
@@ -133,16 +134,82 @@ p {
 
 /* ===== CAVE PAGE ===== */
 
+.room_body{
+
+}
+
 #cave{
   height: 800%;
   width:800%;
   background: #333;
 }
 
+#finalroomcontainer {
+  color: white;
+  width: 300px;
+}
+
+
 .cavelink{
+  position: relative;
   height:400px;
   width:200px;
-  background:white;
+
+}
+
+.dooricon {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 30%;
+  background: red;
+
+}
+
+
+
+.door {
+  position: absolute;
+  height: 70%;
+  width:100%;
+  bottom: 0%;
+  background:url(../images/door_basic.png) center center no-repeat;
+  background-size: contain;
+}
+
+#iconfinal {
+  background:url(../images/iconfinal.png) center center no-repeat;
+  background-size: contain;
+}
+
+#iconpatience {
+  background:url(../images/iconpatience.png) center center no-repeat;
+  background-size: contain;
+}
+
+#iconpass1 {
+  background:url(../images/iconpass1.png) center center no-repeat;
+  background-size: contain;
+}
+
+#iconpass2 {
+  background:url(../images/iconpass2.png) center center no-repeat;
+  background-size: contain;
+}
+
+#iconpass3 {
+  background:url(../images/iconpass3.png) center center no-repeat;
+  background-size: contain;
+}
+
+#iconcatch {
+  background:url(../images/iconcatch.png) center center no-repeat;
+  background-size: contain;
+}
+
+#robo_cave {
+  background:url(../images/robot_surprised.png) center center no-repeat;
+  background-size: contain;
 }
 
 
@@ -206,21 +273,71 @@ background: red;
   background: red;
 }
 
+#robo_patience{
+  background:url(../images/robot_happy.png) center center no-repeat;
+    background-size: contain;
+}
+
+#robo_patiencefail{
+  background:url(../images/robot_grump.png) center center no-repeat;
+    background-size: contain;
+}
+
+#robo_patiencesuccess{
+  background:url(../images/robot_happy.png) center center no-repeat;
+    background-size: contain;
+}
+
 /* ===== PASSWORD PAGES ===== */
+.passwordinput {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 .correct {
   font-family: 'IM Fell English SC', serif;
   font-size: 20px;
+  text-align: center;
   display: none;
 }
 
+
+
 #passwordium1 {
-  width: 200px;
-  height:200px;
-  background: lime;
+  width: 500px;
+  height:500px;
+  background:url(../images/passwordium1.png) center center no-repeat;
+  background-size: contain;
+}
+
+#robo_pass1{
+  background:url(../images/robot_happy.png) center center no-repeat;
+    background-size: contain;
+}
+
+#robo_pass2{
+  background:url(../images/robot_surprised.png) center center no-repeat;
+    background-size: contain;
+}
+
+#robo_pass3{
+  background:url(../images/robot_down.png) center center no-repeat;
+    background-size: contain;
 }
 
 /* ===== PORTRAIT PAGE ===== */
+
+#facecontain {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background:url(../images/facebg.jpg) center center no-repeat;
+  background-size: contain;
+}
+
 
 .facepart {
   display: inline-block;
@@ -261,9 +378,44 @@ background: red;
   width: 25%;
 }
 
-#robo_profile{
-  background:url(../images/mouth1.png) center center no-repeat;
-    background-size: contain;
+.robo_profile{
     display:     block;
     padding-top: 100%;
+}
+
+#robo_profile{
+  background:url(../images/robot_happy.png) center center no-repeat;
+    background-size: contain;
+}
+
+/* ===== CLUES ===== */
+.clue {
+  width: 400px;
+  height: 300px;
+  margin: 20px;
+}
+
+#clue1{
+  background:url(../images/clue1.png) center center no-repeat;
+    background-size: contain;
+}
+
+#clue2{
+  background:url(../images/clue2.png) center center no-repeat;
+    background-size: contain;
+}
+
+#clue3{
+  background:url(../images/clue3.png) center center no-repeat;
+    background-size: contain;
+}
+
+#clue4{
+  background:url(../images/clue4.png) center center no-repeat;
+    background-size: contain;
+}
+
+#clue5{
+  background:url(../images/clue5.png) center center no-repeat;
+    background-size: contain;
 }

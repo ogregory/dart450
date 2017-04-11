@@ -6,26 +6,45 @@
 <link rel="stylesheet" type="text/css" href="../css/boilerplate.css">
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="../js/password1.js"></script>
 </head>
 
 <body>
 
 <div id="cave">
 
-  <div id="finalroomcontainer"> <div class="cavelink" id="finalroom"></div>
-  <p>Password: <input type="text" id="pass1"></p>
-  <a href="cave.html" class="correct" id="proceed1"> Well Done! </a>
+  <div id="finalroomcontainer"> <div class="cavelink" id="finalroom">
+    <div class="dooricon" id="iconfinal"></div>
+    <div class="door"></div>
+  </div>
+  <p>Password: <input type="text" id="finaldoor"></p>
+  <a href="cave.html" class="final" id="proceed1"> Well Done! </a>
  </div>
 
-  <a href="patience.html"> <div class="cavelink" id="link1"></div> </a>
+  <a href="patience.html"> <div class="cavelink" id="link1">
+    <div class="dooricon" id="iconpatience"></div>
+    <div class="door"></div>
+  </div> </a>
 
-  <a href="password1.html"> <div class="cavelink" id="link2"></div> </a>
+  <a href="password1.html"> <div class="cavelink" id="link2">
+    <div class="dooricon" id="iconpass1"></div>
+    <div class="door"></div>
+  </div> </a>
 
-  <a href="password2.html"> <div class="cavelink" id="link3"></div> </a>
+  <a href="password2.html"> <div class="cavelink" id="link3">
+    <div class="dooricon" id="iconpass2"></div>
+    <div class="door"></div>
+  </div> </a>
 
-  <a href="password3.html"> <div class="cavelink" id="link4"></div> </a>
+  <a href="password3.html"> <div class="cavelink" id="link4">
+    <div class="dooricon" id="iconpass3"></div>
+    <div class="door"></div>
+  </div> </a>
 
-  <a href="catch.html"> <div class="cavelink" id="link5"></div> </a>
+  <a href="catch.html"> <div class="cavelink" id="link5">
+    <div class="dooricon" id="iconcatch"></div>
+    <div class="door"></div>
+  </div> </a>
 
   <div id="profile_narration">
     <article class="bubble">
@@ -35,7 +54,7 @@
       </p>
     </article>
 
-    <div id="robo_profile"></div>
+    <div class="robo_profile" id="robo_cave"></div>
   </div>
 
 </div>
