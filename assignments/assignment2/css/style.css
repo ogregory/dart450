@@ -130,7 +130,79 @@ p {
 
 }
 
+a:link {
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 /* ===== FRONT PAGE ===== */
+
+#frontpage_main {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+  width: 40%;
+}
+
+#logo {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height:500px;
+  background:url(../images/logo.jpg) center center no-repeat;
+  background-size: contain;
+}
+
+#login {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+}
+
+#login button {
+  margin:20px;
+}
+
+#login a:link {
+    color: #46c8f5;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+#login a:visited {
+    color: #46c8f5;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    background-color: transparent;
+    text-decoration: none;
+}
 
 /* ===== CAVE PAGE ===== */
 
@@ -177,6 +249,11 @@ p {
   background-size: contain;
 }
 
+#finalroom {
+  background:url(../images/door_final.png) center center no-repeat;
+  background-size: contain;
+}
+
 #iconfinal {
   background:url(../images/iconfinal.png) center center no-repeat;
   background-size: contain;
@@ -219,7 +296,6 @@ p {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  border: 4px blue solid;
 }
 
 #catchme {
@@ -228,9 +304,24 @@ z-index:500;
 right:-500px;
 top:10px;
 width:500px;
-height:300px;
-border: 1px red solid;
-background: red;
+height:350px;
+background:url(../images/key_fly.png) center center no-repeat;
+background-size: contain;
+}
+
+#catchdoor {
+  position: fixed;
+  z-index: -50;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background:url(../images/door_catch.png) center center no-repeat;
+  background-size: contain;
+}
+
+#robo_catch {
+  background:url(../images/robot_catch.png) center center no-repeat;
+  background-size: contain;
 }
 
 /* ===== FALL PAGE ===== */
@@ -255,10 +346,18 @@ background: red;
   top: 50%;
   left:50%;
   transform: translate(-50%,-50%);
-  width:400px;
-  height:200px;
+  width:500px;
+  height:800px;
   z-index: 1;
-  background: blue;
+  background:url(../images/door_construction.png) center center no-repeat;
+  background-size: contain;
+}
+
+.wait button {
+  position: fixed;
+  bottom:0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .go {
@@ -266,11 +365,19 @@ background: red;
   top: 50%;
   left:50%;
   transform: translate(-50%,-50%);
-  width:400px;
-  height:200px;
+  width:500px;
+  height:800px;
   visibility: hidden;
   z-index: 5;
-  background: red;
+  background:url(../images/door_construction.png) center center no-repeat;
+  background-size: contain;
+}
+
+.go button {
+  position: fixed;
+  bottom:0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #robo_patience{
@@ -288,6 +395,13 @@ background: red;
     background-size: contain;
 }
 
+#patienceBG {
+  height: 100%;
+  width: 100%;
+  background:url(../images/patiencebg.jpg) center center no-repeat;
+    background-size: contain;
+}
+
 /* ===== PASSWORD PAGES ===== */
 .passwordinput {
   position: fixed;
@@ -299,7 +413,7 @@ background: red;
 
 .correct {
   font-family: 'IM Fell English SC', serif;
-  font-size: 20px;
+  font-size: 24px;
   text-align: center;
   display: none;
 }
