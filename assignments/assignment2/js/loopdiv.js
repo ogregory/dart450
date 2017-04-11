@@ -38,6 +38,8 @@ $(document).ready(function() {
         //Since the function will be looping many times, we begin each loop by resetting
         //the divs starting position by messing with its css properties.
         //It will always begin off the screen and at a random height.
+        //In this example the *500 indicates the high-end of the random number being generated
+        //The 5 afterwards is the low-end
         $('#catchme').css({right:-500,
           top: Math.floor((Math.random()*500)+5),
         });
@@ -47,7 +49,7 @@ $(document).ready(function() {
         //its speed a little more unpredictable.
         $('#catchme').animate ({
             right: '+=3000',
-        }, Math.floor((Math.random()*800)+200) , 'linear', function() {
+        }, Math.floor((Math.random()*1000)+200) , 'linear', function() {
             loop();
         });
     }
