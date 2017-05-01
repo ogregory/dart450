@@ -8,7 +8,7 @@
 //before the div and link are replaced by a working link.
 
 //This is accomplished in a cheat-y way
-//Two identicle divs are placed directly on top of each other with different z-index values
+//Two identical divs are placed directly on top of each other with different z-index values
 //the div with the working link is placed in front of the wrong link but is hidden as a default
 //Only after a minute has passed is the working link shown and available to click.
 

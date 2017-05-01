@@ -1,4 +1,6 @@
-//This javascript is responsible for all of the password interactions of my pages.
+//This javascript is responsible for all of the password interactions of my pages,
+//This js also covers the random positioning of the door links in the cave hub page.
+
 //The goal was to have the user search for clues around and within each page to figure out
 //the hidden codeword in order to move forwards.
 
@@ -50,4 +52,26 @@ $(document).ready(function() {
             $("#proceed1").css("display", "none");
         }
     });
+
+  //This function randomly places our door links in the cave randomly every time
+  //the user reloads the page adding a need for exploration as well as some light
+  //memorization of the icons to ensure they don't repeat a challenge.
+    $(".cavelink").each(function () {
+    var posX = randomIntegerInRange(0,$('#cave').width());
+    var posY = randomIntegerInRange(0,$('#cave').height());
+
+    $(this).css({
+      top: posY + 'px',
+      left: posX + 'px',
+      });
+    });
+
+
 });
+
+
+//We're borrowing the pseudo-random number generation code from earlier this semester.
+function randomIntegerInRange(min,max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+
+}

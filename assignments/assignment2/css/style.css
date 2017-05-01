@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -211,18 +211,33 @@ a:active {
 }
 
 #cave{
-  height: 800%;
-  width:800%;
+  height: 200%;
+  width:200%;
+  background: #333;
+}
+
+#cave_body{
   background: #333;
 }
 
 #finalroomcontainer {
   color: white;
+  position: relative;
   width: 300px;
+  top: 20px;
+  left: 20px;
+
 }
 
 
 .cavelink{
+  position: relative;
+  height:400px;
+  width:200px;
+
+}
+
+.cavelink2{
   position: relative;
   height:400px;
   width:200px;
@@ -412,7 +427,7 @@ background-size: contain;
 
 
 .correct {
-  font-family: 'IM Fell English SC', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   text-align: center;
   display: none;
